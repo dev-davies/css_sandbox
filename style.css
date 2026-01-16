@@ -482,3 +482,44 @@ a {
     transform: translateY(0);
 }
 
+
+
+/* -------------------------------------------------------------
+   WooCommerce Overrides
+------------------------------------------------------------- */
+/* Add to Cart Buttons */
+.woocommerce #respond input#submit, 
+.woocommerce a.button, 
+.woocommerce button.button, 
+.woocommerce input.button {
+    background-color: var(--accent-terracotta) !important;
+    color: white !important;
+    border-radius: 50px !important;
+    border: none !important;
+    transition: all 0.3s ease;
+}
+
+.woocommerce #respond input#submit:hover, 
+.woocommerce a.button:hover, 
+.woocommerce button.button:hover, 
+.woocommerce input.button:hover {
+    background-color: var(--accent-terracotta);
+    filter: brightness(1.1);
+    transform: translateY(-2px);
+}
+
+/* Remove Image Borders */
+.woocommerce ul.products li.product a img {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* Price Typography */
+.woocommerce ul.products li.product .price,
+.woocommerce div.product p.price {
+    font-family: var(--font-heading) !important;
+    color: var(--text-primary) !important;
+    font-weight: 700 !important;
+    font-size: 1.25rem;
+}
+
